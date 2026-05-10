@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jettlover | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="enterScreen" class="enter-screen">
+    <div class="enter-content">
+      <p class="enter-brand">Jettlover</p>
+      <h1>Click to continue...</h1>
+    </div>
+  </div>
+
+  <main id="siteContent" class="site-content hidden-site">
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="nav-logo" href="#home">Jettlover</a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <!-- Place your attached photo inside the images folder and name it profile.jpg.
+           If the image still does not appear, check the real filename inside the images folder.
+           For example, if the image is called profile.png, change the src to images/profile.png. -->
+      <img src="images/profile.jpg" alt="Blurred hero background" class="hero-bg" aria-hidden="true">
+      <img src="images/profile.jpg" alt="Hero image" class="hero-image">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-shell">
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="about-copy reveal">
+          IM A FAGGOT! (still got nothing to write)
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading centered reveal">
+        <span class="section-kicker">Photos</span>
+        <h2>Gallery</h2>
+        <p>A small space for future memories and visuals.</p>
+      </div>
+
+      <div class="gallery-wrapper">
+        <button class="gallery-arrow gallery-prev" id="galleryPrev" type="button" aria-label="Previous gallery images">
+          <span>&#8249;</span>
+        </button>
+
+        <!-- The gallery images are added with JavaScript from the image path array in script.js. -->
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+
+        <button class="gallery-arrow gallery-next" id="galleryNext" type="button" aria-label="Next gallery images">
+          <span>&#8250;</span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Jettlover.</p>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="audio/background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
